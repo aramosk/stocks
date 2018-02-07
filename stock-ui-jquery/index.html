@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stocks UI - jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="stocks.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <section>
+                <header class="header">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h1>Stock list</h1>
+                        </div>
+                        <div class="col-md-6">
+                        </div>
+                        <div class="col-md-2">
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section class="main">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Current price (EUR)</th>
+                            <th>Last update</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stocks"/>
+                </table>
+            </section>
+        </div>
+    </div>
+</div>
+</body>
+</html>  

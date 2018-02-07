@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <section>
+        <header class="header">
+          <div class="row">
+            <div class="col-md-4">
+              <h1>Stock list</h1>
+            </div>
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-primary" (click)="redirectNewStockPage()">New Stock</button>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <section class="main">
+
+        <table class="table table-striped table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Current price (EUR)</th>
+            <th>Last update</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let stock of stocks">
+            <th scope="row">{{stock.id}}</th>
+            <td>{{stock.name}}</td>
+            <td>{{stock.currentPrice}}</td>
+            <td>{{stock.lastUpdate | date: 'dd/MM/yyyy HH:mm:ss'}}</td>
+            <td>
+              <button type="button" class="btn btn-success" (click)="editStockPage(stock)">Edit</button>
+              <button type="button" class="btn btn-danger" (click)="deleteStock(stock)">Delete</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+</div>
