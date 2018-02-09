@@ -1,7 +1,7 @@
-package com.payconiq.assignment.stocksApp.services;
+package com.alfredo.assignment.stocksApp.services;
 
-import com.payconiq.assignment.stocksApp.model.Stock;
-import com.payconiq.assignment.stocksApp.repo.StockDao;
+import com.alfredo.assignment.stocksApp.model.Stock;
+import com.alfredo.assignment.stocksApp.repo.StockDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

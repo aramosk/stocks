@@ -1,6 +1,6 @@
-package com.payconiq.assignment.stocksApp.repo;
+package com.alfredo.assignment.stocksApp.repo;
 
-import com.payconiq.assignment.stocksApp.model.Stock;
+import com.alfredo.assignment.stocksApp.model.Stock;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 /**

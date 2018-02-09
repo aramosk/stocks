@@ -1,4 +1,4 @@
-package com.payconiq.assignment.stocksApp.config;
+package com.alfredo.assignment.stocksApp.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

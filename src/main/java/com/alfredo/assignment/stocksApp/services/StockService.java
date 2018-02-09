@@ -1,6 +1,6 @@
-package com.payconiq.assignment.stocksApp.services;
+package com.alfredo.assignment.stocksApp.services;
 
-import com.payconiq.assignment.stocksApp.model.Stock;
+import com.alfredo.assignment.stocksApp.model.Stock;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

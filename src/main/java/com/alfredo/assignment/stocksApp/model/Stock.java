@@ -1,4 +1,4 @@
-package com.payconiq.assignment.stocksApp.model;
+package com.alfredo.assignment.stocksApp.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

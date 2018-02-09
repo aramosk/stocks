@@ -1,9 +1,9 @@
-package com.payconiq.assignment.stocksApp;
+package com.alfredo.assignment.stocksApp;
 
+import com.alfredo.assignment.stocksApp.controller.StocksController;
+import com.alfredo.assignment.stocksApp.model.StockDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.payconiq.assignment.stocksApp.controller.StocksController;
-import com.payconiq.assignment.stocksApp.model.Stock;
-import com.payconiq.assignment.stocksApp.model.StockDTO;
+import com.alfredo.assignment.stocksApp.model.Stock;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -51,7 +51,7 @@ public class StocksAppTests {
         mockMvc.perform(MockMvcRequestBuilders.get("/api/stocks/1"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("name", is("payconiq")))
+                .andExpect(jsonPath("name", is("facebook")))
                 .andExpect(jsonPath("currentPrice", is(5000.75)));
 
         //Stock not found
@@ -65,7 +65,7 @@ public class StocksAppTests {
                 .perform(MockMvcRequestBuilders.get("/api/stocks"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$[0].name", is("payconiq")))
+                .andExpect(jsonPath("$[0].name", is("facebook")))
                 .andExpect(jsonPath("$[0].currentPrice", is(5000.75)))
                 .andExpect(jsonPath("$[1].name", is("yahoo")))
                 .andExpect(jsonPath("$[1].currentPrice", is(1500.85)))

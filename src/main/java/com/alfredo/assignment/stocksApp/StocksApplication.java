@@ -1,4 +1,4 @@
-package com.payconiq.assignment.stocksApp;
+package com.alfredo.assignment.stocksApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
